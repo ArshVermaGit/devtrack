@@ -399,6 +399,7 @@ export default function GoalTracker() {
                           }
                         }}
                         disabled={goal.current >= goal.target}
+                        aria-label={`Increment "${goal.title}" progress by 1`}
                         className="rounded bg-blue-600 px-2 py-1 text-xs text-white hover:bg-blue-700 disabled:opacity-50"
                       >
                         +1

@@ -362,6 +362,8 @@ export default function ContributionHeatmap({
           <div className="relative" ref={popoverRef}>
             <button
               onClick={() => setShowPopover((v) => !v)}
+              aria-label={customLabel ? `Custom date range: ${customLabel}` : "Select custom date range"}
+              aria-expanded={showPopover}
               className={`px-3 py-1 rounded-md text-xs font-medium transition-colors border border-[var(--border)] ${
                 customLabel
                   ? "bg-[var(--accent)] text-[var(--background)]"
